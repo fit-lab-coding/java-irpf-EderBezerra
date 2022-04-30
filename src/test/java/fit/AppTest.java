@@ -53,7 +53,6 @@ public class AppTest
         var taxLayerExpected = 0.075;
         // act
         var actualTaxLayex = IrpfCalculator.calculateTaxLayer(baseSalary);
-
         // assert
         assertEquals(actualTaxLayex, taxLayerExpected, 0.01);
     }
