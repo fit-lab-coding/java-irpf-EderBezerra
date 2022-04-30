@@ -27,11 +27,10 @@ public class AppTest
     @Test
     public void shouldCalculateExemptionValue() {
         // arrange
-        var exemptionValueExpected = 1903.98;
+        var exemptionValueExpected = 1903.98;  
 
         // act
         var actualExemptionValue = IrpfCalculator.calculateExemption();
-
         // assert
         assertEquals(exemptionValueExpected, actualExemptionValue, 0.01);
     }
@@ -41,10 +40,8 @@ public class AppTest
         // arrange
         var baseSalary  = 2670.00;
         var discountValueExpected = 766.02;
-
         // act
         var actualDiscountValue = IrpfCalculator.calculateDiscount(baseSalary);
-
         // assert
         assertEquals(discountValueExpected, actualDiscountValue, 0.01);
     }
@@ -54,7 +51,6 @@ public class AppTest
         // arrange
         var baseSalary  = 2670.00;
         var taxLayerExpected = 0.075;
-
         // act
         var actualTaxLayex = IrpfCalculator.calculateTaxLayer(baseSalary);
 
@@ -70,7 +66,6 @@ public class AppTest
 
         // act
         var actualIrpfValue = IrpfCalculator.calculateIrpf(totalSalary);
-
         // assert
         assertEquals(actualIrpfValue, irpfValueExpected, 0.01);
     }
